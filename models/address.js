@@ -7,8 +7,8 @@ module.exports = function(sequelize, DataTypes) {
   }, {});
 
   Address.associate = function(models) {
-    Address.belongsTo(models.User,{
-      as: 'user', foreignKey: 'userId'   // address belong to user 
+    Address.belongsTo(models.User, {
+      as: 'user', foreignKey: 'userId'
     })
   }
 
